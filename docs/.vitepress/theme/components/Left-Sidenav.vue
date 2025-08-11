@@ -11,6 +11,10 @@ watch(
   },
   { immediate: true }
 );
+
+function toggleSection() {
+  alert("alert");
+}
 </script>
 
 <template>
@@ -23,11 +27,18 @@ watch(
     <div class="sidebar-section">
       <div class="sidebar-section-title">Introduction</div>
     </div>
+    <!-- <details>
+      <summary >Click to expand</summary>
+      <p>
+        This is the hidden content. It appears when you open the details
+        element.
+      </p>
+    </details> -->
     <div class="sidebar-section">
       <div
         class="sidebar-section-title"
-        onclick="toggleSection(this)"
         aria-expanded="false"
+        @click="toggleSection"
       >
         Navigating Bharatrath Digital Platform
       </div>

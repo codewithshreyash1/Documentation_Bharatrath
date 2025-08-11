@@ -4,10 +4,8 @@
     <main class="container">
       <LeftSidenav :lang="lang" />
       <Content />
+      <RightSidenav :lang="lang" />
     </main>
-    <div>
-      {{ lang }}
-    </div>
     <Footer />
   </div>
 </template>
@@ -17,6 +15,7 @@ import { ref } from "vue";
 import Footer from "./components/Footer.vue";
 import Header from "./components/Header.vue";
 import LeftSidenav from "./components/Left-Sidenav.vue";
+import RightSidenav from "./components/Right-Sidenav.vue";
 
 const lang = ref("en");
 function handleLangChange(newLang: string) {

@@ -5,7 +5,7 @@
       <span></span>
       <span></span>
     </button>
-    <h1 class="class-h1">Bharatrath Documentation</h1>
+    <h1 class="class-h1">{{ para }}</h1>
     <div
       id="main-language-selector"
       role="region"
@@ -67,7 +67,7 @@
 
 <script setup>
 import { ref, watch, defineProps, defineEmits } from "vue";
-const props = defineProps({ lang: String });
+const props = defineProps({ lang: String, title: String, para: String });
 const emit = defineEmits(["lang-change"]);
 const lang = ref(props.lang);
 
