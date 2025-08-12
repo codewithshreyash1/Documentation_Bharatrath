@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "introduction",
+    "title": "Introduction",
+    "lang": "en",
+    "content": "<p>Welcome to the documentation! This is the introduction page.</p>"
+  },
+  {
+    "slug": "getting-started",
+    "title": "Getting Started",
+    "lang": "en",
+    "content": "<p>Follow these steps to get started with the project.</p>"
+  },
+  {
+    "slug": "installation",
+    "title": "Installation Guide",
+    "lang": "en",
+    "content": "<p>Run <code>npm install</code> to set up your environment.</p>"
+  }
+]
